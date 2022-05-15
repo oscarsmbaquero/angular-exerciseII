@@ -1,0 +1,16 @@
+
+
+
+<div class="picture"
+  *ngIf="picture">
+  <img class="picture__image"[src]="picture.image">
+  <p class ="picture__name">{{picture.name}}</p>
+  <a class ="picture__a"[routerLink]="['/detail', picture.id]">Ver más</a>
+</div>
+
+
+
+
+
+
+
