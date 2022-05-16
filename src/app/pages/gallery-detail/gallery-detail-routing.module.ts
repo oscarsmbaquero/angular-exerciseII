@@ -1,7 +1,11 @@
+import { GalleryDetailComponent } from './gallery-detail.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+
+  {path: '', component: GalleryDetailComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

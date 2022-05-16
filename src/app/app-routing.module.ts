@@ -14,23 +14,14 @@ const routes: Routes = [
   }, 
   {
     path: "gallery",
-    pathMatch:'full',//coincida nombre exacto
-    //component: GalleryComponent,
     loadChildren: () => import('src/app/pages/gallery/gallery.module').then(m => m.GalleryModule)
    },
-  //  {
-  //   path: "gallery/:id",
-  //   pathMatch:'full',//coincida nombre exacto
-  //   component: GalleryDetailComponent,
-  //  },
   {
       path: "detail/:id",
-      pathMatch:'full',//coincida nombre exacto
-      component: GalleryDetailComponent,
+      loadChildren: () => import('src/app/pages/gallery-detail/gallery-detail.module').then(m => m.GalleryDetailModule)
      },
    {
     path: "form",
-    pathMatch:'full',//coincida nombre exacto
     component: FormComponent,
     },
     {

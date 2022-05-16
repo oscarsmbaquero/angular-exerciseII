@@ -1,3 +1,4 @@
+import { CoreModule } from './core/core.module';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 
 import { NgModule } from '@angular/core';
@@ -12,13 +13,14 @@ import { GalleryDetailComponent } from './pages/gallery-detail/gallery-detail.co
 @NgModule({
   declarations: [
     AppComponent,
-    GalleryDetailComponent
+    GalleryDetailComponent,
     
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
